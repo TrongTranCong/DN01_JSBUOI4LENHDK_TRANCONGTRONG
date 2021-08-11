@@ -15,18 +15,16 @@
  * Sort by Num1 < Num2 < Num3
  */
 
-var Num1ELE = document.getElementById("inputNum1");
-var Num2ELE = document.getElementById("inputNum2");
-var Num3ELE = document.getElementById("inputNum3");
 document.getElementById("btnSort").onclick = function(){
-Num1 = parseInt(Num1ELE.value);
+
+Num1 = parseInt(document.getElementById("inputNum1").value);
 console.log(Num1);
-Num2 = parseInt(Num2ELE.value);
+Num2 = parseInt(document.getElementById("inputNum2").value);
 console.log(Num2);
-Num3 = parseInt(Num3ELE.value);
+Num3 = parseInt(document.getElementById("inputNum3").value);
 console.log(Num3);
 
-points = [Num1, Num2, Num3];
-points.sort(function(a,b){return a-b});
-document.getElementById("txtResult").innerHTML = points;  
+number = [Num1, Num2, Num3];
+number.sort(function(Num1,Num2){return Num1-Num2});
+document.getElementById("txtResult").innerHTML = number;  
 }

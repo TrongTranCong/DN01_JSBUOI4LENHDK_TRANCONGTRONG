@@ -8,7 +8,7 @@
  * Step1: Declare variables and hold values from Form
  * 
  * Step2: 
- * Using the condition statements if else 
+ * Using the condition statements if else if
  * Step3: Display on UI
  * 
  * Block 3: Output

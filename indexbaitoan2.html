@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,13 +14,14 @@
     <div class="col-6 py-5">
         <h2>"Hello" programme with members in family</h2>
         <form>
-            <div class="form-group">
-                <label class="bg-warning">Please input letter (Daddy = D; Mommy = M; Brother = B; Younger Sister = Y) in
-                    blank below to confirm members</label>
-                <input type="text" class="form-control" id="inputMembers" placeholder="Who is user?">
-
-            </div>
-            <button class="btn btn-success rounded-pill" id="btnAnswer" type="button">Confirm</button> 
+            <select id="selectMember" class="my-3 col-4 custom-select">
+                <option selected>Click to select members</option>
+                <option value="1">Daddy</option>
+                <option value="2">Mommy</option>
+                <option value="3">Brother</option>
+                <option value="4">Younger Sister</option>
+            </select>
+            <button style="padding: .375rem 1.75rem" class="mx-3 btn btn-success rounded-pill" id="btnAnswer" type="button">Say</button>
             <p class="col-4 my-3 alert alert-warning" id="txtResult"></p>
         </form>
     </div>

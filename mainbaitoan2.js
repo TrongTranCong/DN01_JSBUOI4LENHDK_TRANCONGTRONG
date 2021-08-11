@@ -18,27 +18,25 @@
  * Answer appropriate with each member
  */
 
-var memberELE= document.getElementById("inputMembers");
-    console.log(memberELE);
+
 
 document.getElementById("btnAnswer").onclick = function(){
-    member = memberELE.value;
+    var member = document.getElementById("selectMember").value;
+    console.log(member);
     switch (member){
-        case "D":
+        case "1":
             member = "Daddy";
             break;
-        case "M": 
+        case "2": 
             member = "Mommy";
             break;
-        case "B":
+        case "3":
             member = "Brother";
             break;
-        case "Y": 
+        case "4": 
             member = "Younger Sister";
             break;
-        default:
-            member = "Please input members family";
-    }
-    document.getElementById("txtResult").innerHTML = "Hello" + " " + member + "!"; 
+    }      
+    document.getElementById("txtResult").innerHTML =  "Hello "+ member + "!";
 }
  
